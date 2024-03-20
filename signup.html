@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Sign Up - Freshify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="signup-form">
+    <h1>Sign Up</h1>
+    <form action="" method="post" onsubmit="return validateSignup()">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+      <button type="submit">Sign Up</button>
+      <span id="signup-error"></span>
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+  <script>
+    function validateSignup() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+
+      // Basic validation example
+      if (name.trim() === '') {
+        document.getElementById('signup-error').textContent = 'Please enter your name.';
+        return false;
+      }
+
+      if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+        document.getElementById('signup-error').textContent = 'Please enter a valid email address.';
+        return false;
+      }
+
+      if (password.length < 6) {
+        document.getElementById('signup-error').textContent = 'Password must be at least 6 characters long.';
+        return false;
+      }
+
+      if (password !== confirmPassword) {
+        document.getElementById('signup-error').textContent = 'Passwords do not match.';
+        return false;
+      }
+
+      // Replace with your actual logic to send signup data to server for processing
+      alert('Signup successful! (placeholder)');
+      return false; // Prevent form submission (replace with redirection upon successful server-side signup)
+    }
+  </script>
+</body>
+
+</html>

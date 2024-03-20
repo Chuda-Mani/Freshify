@@ -1,0 +1,384 @@
+<!DOCTYPE html  >
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatib1e" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Responsive Fruits and Vegetables Website</title>
+<link rel = "stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="navigation.js"></script> ```
+
+
+
+</head>
+<body>
+
+    <!--navbar-->
+        <header>
+            <a href="#" class="logo"><i class=' bx bxs-basket'></i>Freshify</a>
+            <div class="bx bx-menu" id= " menu-icon"></div>
+            <ul class="navbar">
+                <li><a href="#home" class="home-active">Home</a></li>
+                <!-- <li><a href="#categories">Categories</a></li> -->
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#customers">Customers</a></li>
+                
+                
+
+
+            </ul>
+
+            <div class="profile">
+                <img src="images/wallpaper.jpeg" alt="">
+                <span>Abdus Rahman</span>
+                <i class='bx bx-caret-down' id="dropdown-toggle"></i>
+                <ul class="dropdown-menu" id="profile-dropdown">
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="security.html">Security</a></li>
+                    <li><a href="privacy.html">Privacy Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+            </div>
+
+            
+        </header>
+
+    
+          
+
+
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span>We are Delicacy</span>
+                    <h1>Choose delicacy <br> the best healthy <br>chicken salad</h1>
+                    <li><a href="#" class="btn" onclick="goToCategories()" >Shop Now<i class='bx bx-right-arrow-alt' ></i></a></li>
+                </div>
+                 <img src = "images/slider1.jpg" alt="">
+                 
+            </div>
+            
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span>We are Delicacy</span>
+                    <h1>Choose delicacy <br> the best healthy <br>chicken salad</h1>
+                    <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt' ></i></a>
+                </div>
+
+                <img src = "images/slider2.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span>We are Delicacy</span>
+                    <h1>Choose delicacy <br> the best healthy <br>chicken salad</h1>
+                    <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt' ></i></a>
+                </div>
+                <img src = "images/slider3.jpg" alt="">
+
+            </div>
+            
+          </div>
+          
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          
+           
+
+
+    </section>
+
+    <section class="categories" id="categories">
+        <div class="heading">
+            <h1>Browse Our Hottest <br><span>Categories</h1>
+                <li><a href="#" class="btn" onclick="goToCategories()" >See All<i class='bx bx-right-arrow-alt' ></i></a></li>
+                
+        </div>
+
+        <div class="categories-conatiner">
+            <div class="box box1">
+                <img src = "images/cate1.jpg" alt="">
+                <h2>Fruits</h2>
+                <span>9 Items</span>
+                <i class='bx bx-right-arrow-alt' ></i>
+                
+                
+            </div>
+
+            <div class="box box2" >
+                <img src = "images/cate2.jpg" alt="">
+                <h2>Vegetables</h2>
+                <span>9 Items</span>
+                <i class='bx bx-right-arrow-alt' ></i>
+            </div>
+
+            <div class="box box3">
+                <img src = "images/cate3.jpg" alt="">
+                <h2>Drinks</h2>
+                <span>9 Items</span>
+                <i class='bx bx-right-arrow-alt' ></i>
+            </div>
+
+            <div class="box box4">
+                <img src = "images/cate4.jpg" alt="">
+                <h2>Fresh Nuts</h2>
+                <span>9 Items</span>
+                <i class='bx bx-right-arrow-alt' ></i>
+            </div>
+
+            <div class="box box5">
+                <img src = "images/cate5.jpg" alt="">
+                <h2>Spices</h2>
+                <span>9 Items</span>
+                <i class='bx bx-right-arrow-alt' ></i>
+            </div>
+        </div>
+
+
+    </section>
+    
+
+    <section class="products" id="products">
+        <div class="heading">
+            <h1>Our Popular <br><span>Products</h1>
+                <li><a href="#" class="btn" onclick="goToProducts()">Shop Now<i class='bx bx-right-arrow-alt' ></i></a></li>
+                
+        </div>
+
+        <div class="products-container">
+            <div class="box">
+                <img src="images/p1.png" alt="">
+                <span>Fresh Items</span>
+                <h2>Farm fresh organic <br>fruits 250g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bxs-cart' ></i>
+                <i class='bx bx-heart' ></i>
+                <span class="discount">-25%</span>
+           </div>
+
+           <div class="box">
+                <img src="images/p2.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Farm fresh organic <br>fruits 250g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bxs-cart' ></i>
+                <i class='bx bx-heart' ></i>
+                <span class="discount">-25%</span>
+           </div>
+
+           <div class="box">
+                <img src="images/p3.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Farm fresh organic <br>fruits 250g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bxs-cart' ></i>
+                <i class='bx bx-heart' ></i>
+                <span class="discount">-25%</span>
+            </div>
+
+            <div class="box">
+                <img src="images/p4.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Farm fresh organic <br>fruits 250g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bxs-cart' ></i>
+                <i class='bx bx-heart' ></i>
+                <span class="discount">-25%</span>
+            </div> 
+
+            <div class="box">
+                <img src="images/p5.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Farm fresh organic <br>fruits 250g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bxs-cart' ></i>
+                <i class='bx bx-heart' ></i>
+                <span class="discount">-25%</span>
+           </div>
+
+           <div class="box">
+                <img src="images/p6.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Farm fresh organic <br>fruits 250g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bxs-cart' ></i>
+                <i class='bx bx-heart' ></i>
+                <span class="discount">-25%</span>
+           </div>
+        </div>
+    </section>
+
+    <!--about-->
+    <section class="about" id="about">
+        <img src ="images/about us.jpg" alt="">
+        <div class="about-text">
+            <span>About Us</span>
+            <p>Our team is passionate about providing you with the freshest produce possible. We work closely with local farmers and suppliers who share our commitment to quality and environmental sustainability. From vibrant leafy greens to crisp root vegetables, each item is handpicked to ensure superior taste and nutritional value.</p>
+            <p>Customer satisfaction is our top priority. We strive to offer a seamless shopping experience, from browsing our extensive catalogue to timely delivery to your doorstep. Whether you're a seasoned chef or a home cook, we aim to inspire you to create delicious and wholesome meals with our premium selection of vegetables.</p>
+            <a href="#" class="btn">Learn More<i class='bx bx-right-arrow-alt' ></i></a>
+        </div>
+    </section>
+
+    <!--customers-->
+    <section class="customers" id="customers">
+        <h2>Why Customers Love Us?</h2>
+        <div class="customer-container">
+            <!--Review 1-->
+            <div class="box">
+                <i class='bx bxs-quote-alt-left'></i>
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>lorem ipsum</p>
+
+                <div class="review-profile">
+                    <img src ="images/c1.avif" alt="">
+                    <h3>Michele Smith</h3>
+                </div>
+            </div>
+
+            <!--Review 2-->
+            <div class="box">
+                <i class='bx bxs-quote-alt-left'></i>
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>lorem ipsum</p>
+
+                <div class="review-profile">
+                    <img src ="images/c1.avif" alt="">
+                    <h3>Michele Smith</h3>
+                </div>
+            </div>
+
+            <!--Review 3-->
+            <div class="box">
+                <i class='bx bxs-quote-alt-left'></i>
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>lorem ipsum</p>
+
+                <div class="review-profile">
+                    <img src ="images/c1.avif" alt="">
+                    <h3>Michele Smith</h3>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer" id="footer">
+        <div class="footer-box">
+            <a href="#" class="logo"><i class=' bx bxs-basket'></i>Delicacy</a>
+            <p>GymVast, 50th Street, 4th Floor,NYC 10022</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-gmail' ></i></a>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h2>Categories</h2>
+            <a href="#">Fruits & Vegetables</a>
+            <a href="#">Dairy Products</a>
+            <a href="#">Package Food</a>
+            <a href="#">Bevarages</a>
+        </div>
+        <div class="footer-box">
+            <h2>Useful Links</h2>
+            <a href="#">Payment & Tax</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">My Blog</a>
+            <a href="#">Return Policy</a>
+        </div>
+        <div class="footer-box">
+            <h2>News Letter</h2>
+            <p>Get 10% Discount <br>Email NewsLetter</p>
+            <form action="">
+                <i class='bx bxs-envelope'></i>
+                <input type="email" name="" id="" placeholder="Enter Your Email">
+                <i class='bx bx-arrow-back bx-rotate-180' ></i>
+
+            </form>
+        </div>
+    </section>
+
+    <!--swiper to js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        function goToFruits() {
+            // Redirect to the fruits page URL (replace 'fruits.html' with your actual fruits page)
+            window.location.href = "fruits.html";
+        }
+    </script>
+
+<script>
+    function goToCategories()
+    {
+        window.location.href="categories.html";
+    }
+    
+
+    
+</script>
+<script>
+        const usernameElement = document.getElementById('username');
+        const emailElement = document.getElementById('email');
+        const accountTypeElement = document.getElementById('account-type');
+        const joinedDateElement = document.getElementById('joined-date');
+
+        function fetchUserData() {
+        // Replace with your actual API call or data fetching logic
+        fetch('/api/user-data') // Replace with your API endpoint
+            .then(response => response.json())
+            .then(data => {
+            usernameElement.textContent = data.username;
+            emailElement.textContent = data.email; // Consider masking email for security
+            accountTypeElement.textContent = data.accountType;
+            joinedDateElement.textContent = data.joinedDate;
+            })
+            .catch(error => {
+            console.error('Error fetching user data:', error);
+            // Handle errors gracefully, e.g., display a message to the user
+            });
+        }
+
+        fetchUserData();
+</script>
+
+    <!--link to js-->
+    <script src="main.js"></script>
+    <script src="profile-dropdown.js"></script>
+    <script src="edit-profile.js"></script>
+    <script src="security.js"></script>
+    <script src="privacy.js"></script>
+    
+
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html  >
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatib1e" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Responsive Fruits and Vegetables Website</title>
+<link rel = "stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<header>
+    <a href="#" class="logo"><i class=' bx bxs-basket'></i>Delicacy</a>
+    <div class="bx bx-menu" id= " menu-icon"></div>
+    <include src="navigation.html"></include>
+    <ul class="navbar">
+        
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="categories.html" class="home-active">Categories</a></li>
+        <li><a href="products.html" >Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <div id="cart-container">
+            <li><a href="#view cart" id="view-cart">View Cart </a></li>
+            
+            <div id="cart-items-dropdown"></div> </div>
+        </div>
+    </ul>
+
+    <div class="profile">
+        <img src="images/wallpaper.jpeg" alt="">
+        <span>Abdus Rahman</span>
+        <i class='bx bx-caret-down'></i>
+    </div>
+
+    
+</header>
+<body>
+    <section class="products" id="products">
+
+        <div class="products-container">
+            <div class="box">
+                <img src="images/black pepper.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Black Pepper <br>spices 250g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bxs-cart' id="cart-items" ></i>
+                <i class='bx bx-heart' ></i>
+                <button data-product="blackpepper"  class ='bx bxs-cart' ></button>
+                <span class="discount">-25%</span>
+                </div>
+
+                <div class="box">
+                <img src="images/salt.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Salt <br>spices 250g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bxs-cart' id="cart-items"></i>
+                <i class='bx bx-heart' ></i>
+                <button data-product="salt" class ='bx bxs-cart' ></button>
+                <span class="discount">-25%</span>
+                </div>
+
+                <div class="box">
+                <img src="images/cumin.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Cumin <br>spices 250g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bxs-cart' id="cart-items"></i>
+                <i class='bx bx-heart' ></i>
+                <button data-product="cumin" class ='bx bxs-cart' ></button>
+                <span class="discount">-25%</span>
+                 </div>
+
+                <div class="box">
+                <img src="images/chilliflakes.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Chilli Flakes <br>spices 250g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bxs-cart' id="cart-items"></i>
+                <i class='bx bx-heart' ></i>
+                <button data-product="chilli flakes" class ='bx bxs-cart' ></button>
+                <span class="discount">-25%</span>
+                </div> 
+
+                <div class="box">
+                <img src="images/bayleaves.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Bay Leaves<br>spices 250g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bxs-cart' id="cart-items"></i>
+                <i class='bx bx-heart' ></i>
+                <button data-product="bay leaves" class ='bx bxs-cart' ></button>
+                <span class="discount">-25%</span>
+                </div>
+
+                <div class="box">
+                <img src="images/currypowder.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Curry Powder <br>spices 250g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bxs-cart' id="cart-items"></i>
+                <i class='bx bx-heart' ></i>
+                <button data-product="curry powder" class ='bx bxs-cart' ></button>
+                <span class="discount">-25%</span>
+                </div>
+
+                <div class="box">
+                <img src="images/cinnamon.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Cinnamon <br>spices 250g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bxs-cart' id="cart-items"></i>
+                <i class='bx bx-heart' ></i>
+                <button data-product="cinnamon" class ='bx bxs-cart' ></button>
+                <span class="discount">-25%</span>
+                </div>
+
+                <div class="box">
+                <img src="images/driedoregano.jpg" alt="">
+                <span>Fresh Items</span>
+                <h2>Dried Oregano <br>spices 250g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bxs-cart' id="cart-items"></i>
+                <i class='bx bx-heart' ></i>
+                <button data-product="driedoregano" class ='bx bxs-cart' ></button>
+                <span class="discount">-25%</span>
+                </div>
+
+                <div class="box">
+                    <img src="images/paprika.jpg" alt="">
+                    <span>Fresh Items</span>
+                    <h2>Paprika <br>spices 250g</h2>
+                    <h3 class="price">$7.99 <span>/kg</span></h3>
+                    <i class='bx bxs-cart' id="cart-items"></i>
+                    <i class='bx bx-heart' ></i>
+                    <button data-product="paprika" class ='bx bxs-cart' ></button>
+                    <span class="discount">-25%</span>
+                    </div>
+
+
+            </div>
+    </section>
+
+    <div id="cart-popup" class="popup hidden">
+        <p>The item has successfully added to the cart</p>
+        <button id="close-popup">Close</button>
+    </div>
+
+    
+    
+
+    <script>
+       
+       const addToCartButtons = document.querySelectorAll('button[data-product]');
+        const cartItemsList = document.createElement('ul'); // Create cart items list outside
+        let cartIsOpen = false;
+
+            addToCartButtons.forEach(button => {
+         button.addEventListener('click', () => {
+            const product = button.dataset.product;
+            addItemToCart(product);
+            showPopup(product);
+            });
+         }); 
+
+        function addItemToCart(product) {
+    // Implement cart logic (store items, update totals)
+    const cartItem = document.createElement('li');
+    cartItem.innerText = product + " (placeholder)";
+    cartItemsList.appendChild(cartItem);
+    console.log(`${product} added to cart`);
+    }
+
+    function showPopup(product) {
+        const cartPopup = document.getElementById('cart-popup');
+        const popupMessage = cartPopup.querySelector('p');
+        popupMessage.textContent = `${product} added to cart successfully!`;
+
+        cartPopup.classList.remove('hidden');
+        setTimeout(() => {
+            cartPopup.classList.add('hidden');
+        }, 2000);
+    }
+
+    // Close pop-up when close button is clicked
+    const closeButton = document.getElementById('close-popup');
+    closeButton.addEventListener('click', () => {
+        const cartPopup = document.getElementById('cart-popup');
+        cartPopup.classList.add('hidden');
+    });
+
+    const viewCartButton = document.getElementById('view-cart');
+    viewCartButton.addEventListener('click', () => {
+    if (!cartIsOpen) {
+        showCartWindow();
+    } else {
+        closeCartWindow();
+    }
+    cartIsOpen = !cartIsOpen; // Toggle open/closed state
+    });
+
+    function showCartWindow() {
+    const cartWindow = window.open('', 'Cart', 'width=400,height=300');
+    cartWindow.document.write('<h2>Your Cart</h2>');
+
+    // Clear previous content before writing new items (optional, for better UX)
+    cartWindow.document.body.innerHTML = '';
+
+    
+
+    cartWindow.document.write(cartItemsList.outerHTML); // Write entire cart list content
+    }
+
+    function closeCartWindow() {
+    window.close(); // Close the current (cart) window
+    }
+
+    
+    
+
+    
+
+
+    </script>
+ </body>

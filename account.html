@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Account</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Your Account</h1>
+
+  <div class="account-column">
+    <h2>Account Details</h2>
+    <ul>
+      <li>Username: <span id="username"></span></li>
+      <li>Email Address: <span id="email"></span></li>
+      <li>Account Type: <span id="account-type"></span></li>
+      <li>Joined Date: <span id="joined-date"></span></li>
+    </ul>
+
+    <h2>Update Account Information</h2>
+    <form id="update-account-form">
+      <div class="form-group">
+        <label for="email">Email Address (optional):</label>
+        <input type="email" id="email" name="email" placeholder="youremail@example.com">
+      </div>
+      <div class="form-group">
+        <label for="current-password">Current Password (required):</label>
+        <input type="password" id="current-password" name="currentPassword" required>
+      </div>
+      <div class="form-group">
+        <label for="new-password">New Password (optional, leave blank to keep current):</label>
+        <input type="password" id="new-password" name="newPassword">
+      </div>
+      <button type="submit">Update Account</button>
+    </form>
+  </div>
+
+    <h2>Account Management</h2>
+    <ul>
+      <li><a href="#">Change Password</a></li>
+      <li><a href="#">Update Email Address</a></li>
+      <li><a href="#" id="payment-methods-link">Payment Methods (if applicable)</a></li>
+      <li><a href="#" id="subscription-management-link">Subscription Management (if applicable)</a></li>
+    </ul>
+
+    <h2>Preferences</h2>
+    <ul>
+      <li>Language Preferences: <a href="#">Change Language</a></li>
+      <li>Notification Settings: <a href="#">Configure Notifications</a></li>
+      <li>Marketing Preferences: <a href="#">Manage Marketing Emails</a></li>
+    </ul>
+  </div>
+
+  <script src="app.js"></script>  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Security</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Your Security</h1>
+
+  <div class="security-column">
+    <h2>Login Security</h2>
+    <ul>
+      <li>
+        <a href="#">Two-factor Authentication (2FA):</a>
+        <span id="2fa-status" class="status"></span>
+      </li>
+      <li><a href="#">Login History</a> (Review and Revoke Sessions)</li>
+      <li>
+        Password Strength: <span id="password-strength" class="status"></span>
+        <a href="#">Change Password</a>
+      </li>
+    </ul>
+
+    <h2>Account Protection</h2>
+    <ul>
+      <li>
+        <label for="auto-delete">Enable Account Deletion After:</label>
+        <select id="auto-delete" disabled>
+          <option value="0">Never</option>
+          <option value="30">30 Days</option>
+          <option value="60">60 Days</option>
+          <option value="90">90 Days</option>
+        </select>
+      </li>
+      <li><a href="#">Secure Logout</a></li>
+    </ul>
+
+    <h2>Data Security (Optional)</h2>
+    <ul>
+      <li>Data Encryption: In Transit (HTTPS) & At Rest (industry standards)</li>
+      <li><a href="#">Data Export</a> (if applicable)</li>
+    </ul>
+  </div>
+
+  <script src="security.js"></script>
+</body>
+</html>

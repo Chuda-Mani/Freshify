@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Privacy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Your Privacy</h1>
+
+  <div class="privacy-column">
+    <h2>Privacy Settings</h2>
+    <ul>
+      <li>
+        Profile Visibility:
+        <select id="profile-visibility">
+          <option value="public">Public</option>
+          <option value="friends">Friends Only</option>
+          <option value="private">Private</option>
+        </select>
+      </li>
+      <li>
+        Public Information:
+        <ul>
+          <li><input type="checkbox" id="show-email" /> Email Address</li>
+          <li><input type="checkbox" id="show-phone" /> Phone Number</li>
+          </ul>
+      </li>
+      <li>
+        Sharing:
+        <select id="post-visibility">
+          <option value="public">Public</option>
+          <option value="private">Private</option>
+        </select> (Default for Posts & Activity)
+      </li>
+    </ul>
+
+    <h2>Data Sharing</h2>
+    <ul>
+      <li>
+        <input type="checkbox" id="personalization" /> Use data for personalization
+      </li>
+      <li>
+        <input type="checkbox" id="marketing" /> Receive marketing communications
+        <a href="#">Unsubscribe</a> (optional)
+      </li>
+    </ul>
+
+    <h2>Third-Party Integrations</h2>
+    <ul>
+      <li>
+        <p>No connected apps yet.</p>
+      </li>
+      <li>
+        <button disabled>Manage Integrations</button>
+      </li>
+    </ul>
+  </div>
+
+  <script src="privacy.js"></script>
+</body>
+</html>

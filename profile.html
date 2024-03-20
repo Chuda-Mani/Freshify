@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="profile-container">
+    <h1 class="profile-title">My Profile</h1>
+    <div class="profile-info">
+      <img src="images/wallpaper.jpeg" alt="Profile Picture" class="profile-picture">
+      <div class="profile-details">
+        <h2>Basic Information</h2>
+        <p><span class="label">Name:</span> John Doe</p>
+        <p><span class="label">Bio:</span> (Write your bio here)</p>
+        <p><span class="label">Location:</span> Anytown, USA (optional)</p>
+        <hr class="profile-divider"> <h2>Contact Information</h2>
+        <p><span class="label">Email:</span> johndoe@example.com (optional)</p>
+        <p><span class="label">Phone:</span> (555) 555-5555 (optional)</p>
+        <hr class="profile-divider"> <h2>Social Links</h2>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/your-profile"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.twitter.com/your-profile"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/your-profile"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <hr class="profile-divider"> <h2>Additional Information (Optional)</h2>
+        <p><span class="label">Birthday:</span> (Enter your birthday with privacy controls)</p>
+        <p><span class="label">Interests:</span> (List your interests)</p>
+        <p><span class="label">Occupation:</span> Software Engineer (optional)</p>
+      </div> </div> </div> 
+
+      <h1>Edit Your Profile</h1>
+      <form id="profile-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="bio">Bio:</label>
+          <textarea id="bio" name="bio" placeholder="Write a short bio about yourself"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="location">Location (optional):</label>
+          <input type="text" id="location" name="location" placeholder="City, State">
+        </div>
+        <div class="form-group">
+          <label for="email">Email (optional):</label>
+          <input type="email" id="email" name="email" placeholder="youremail@example.com">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number (optional):</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+        </div>
+        <button type="submit">Save Profile</button>
+      </form>
+    
+    
+    </body>
+</html>

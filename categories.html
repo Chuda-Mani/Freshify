@@ -1,0 +1,95 @@
+<!DOCTYPE html  >
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatib1e" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Responsive Fruits and Vegetables Website</title>
+<link rel = "stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+</head>
+<header>
+    <include src="navigation.html"></include>
+</header>
+<body>
+    
+</section>
+
+<section class="categories" id="categories">
+    <div class="heading">
+        <h1>Browse Our Hottest <br><span>Categories</h1>
+            
+            
+    </div>
+
+    <div class="categories-conatiner">
+        <div class="box box1">
+            <img src = "images/cate1.jpg" alt="">
+            <h2>Fruits</h2>
+            <span>22 Items</span>
+            
+            <li><a href="#" class='bx bx-right-arrow-alt' onClick="goToFruits()"></a></li>
+            
+        </div>
+
+        <div class="box box2" >
+            <img src = "images/cate2.jpg" alt="">
+            <h2>Vegetables</h2>
+            <span>22 Items</span>
+            <li><a href="#" class='bx bx-right-arrow-alt' onClick="goToVegetables()"></a></li>
+        </div>
+
+        <div class="box box3">
+            <img src = "images/cate3.jpg" alt="">
+            <h2>Drinks</h2>
+            <span>22 Items</span>
+            <li><a href="#" class='bx bx-right-arrow-alt' onClick="goToDrinks()"></a></li>
+        </div>
+
+        <div class="box box4">
+            <img src = "images/cate4.jpg" alt="">
+            <h2>Fresh Nuts</h2>
+            <span>22 Items</span>
+            <li><a href="#" class='bx bx-right-arrow-alt' onClick="goToFreshNuts()"></a></li>
+        </div>
+
+        <div class="box box5">
+            <img src = "images/cate5.jpg" alt="">
+            <h2>Spices</h2>
+            <span>22 Items</span>
+            <li><a href="#" class='bx bx-right-arrow-alt' onClick="goToSpices()"></a></li>
+        </div>
+    </div>
+
+
+</section>
+
+<script>
+    function goToFruits()
+    {
+        window.location.href='fruits.html';
+    }
+    function goToVegetables()
+    {
+        window.location.href='vegetables.html';
+    }
+    function goToDrinks()
+    {
+        window.location.href='drinks.html';
+    }
+    function goToFreshNuts()
+    {
+        window.location.href='freshnuts.html';
+    }
+    function goToSpices()
+    {
+        window.location.href='spices.html';
+    }
+</script>
+</body>
